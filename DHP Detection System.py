@@ -68,7 +68,7 @@ st.markdown(title_css, unsafe_allow_html=True)
 
 st.title("DHP Detection System")
 
-tabs = st.tabs(["Diabetes Detection", "Heart Disease Detection", "Parkinsons Detection"])
+tabs = st.tabs(["Diabetes", "Heart", "Parkinson"])
 
 diabetes_dict = {
     "pregnancies": None,
