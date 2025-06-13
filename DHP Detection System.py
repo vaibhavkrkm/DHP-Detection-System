@@ -9,7 +9,7 @@ def get_base64_of_image(image_file):
         return base64.b64encode(img_file.read()).decode()
 
 # Path to your image
-image_path = r"C:\Users\vaibh\Documents\Clg Work\Project\Application\background.jpg"  # Replace with your image path
+image_path = r"background.jpg"  # Replace with your image path
 encoded_image = get_base64_of_image(image_path)
 
 # Custom CSS with background image
