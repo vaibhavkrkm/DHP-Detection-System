@@ -31,18 +31,25 @@ tabs_css = """
 <style>
     .stTabs [data-baseweb="tab-list"] {
         justify-content: center;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
     }
+
+    .stTabs [data-baseweb="tab-list"]::-webkit-scrollbar {
+        height: 0px; 
+    }
+
     .stTabs [data-baseweb="tab"] {
         margin-right: 40px;
         margin-left: 40px;
     }
     
-    /* Change the highlight color of the active tab */
     .stTabs [data-baseweb="tab-highlight"] {
         background-color: rgb(88, 192, 217);
     }
     
-    /* Change the color of the active tab text (optional) */
     .stTabs [aria-selected="true"] {
         color: rgb(88, 192, 217);
     }
