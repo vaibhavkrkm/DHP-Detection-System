@@ -18,6 +18,8 @@ background_image_css = f"""
 .stApp {{
     background-image: url("data:image/jpg;base64,{encoded_image}");
     background-size: 100% auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }}
 </style>
 """
